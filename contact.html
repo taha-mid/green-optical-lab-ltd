@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us — Green Optical Lab Ltd.</title>
+  <meta name="description" content="Get in touch with Green Optical Lab Ltd. for bulk orders, custom lab inquiries, or delivery questions across Bangladesh.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+
+<div class="ribbon">📦 Nationwide Delivery Across All 64 Districts of Bangladesh</div>
+
+<nav id="navbar">
+  <a href="index.html" class="nav-logo">
+    <div class="nav-logo-icon">🔬</div>
+    <div class="nav-logo-text">
+      Green Optical Lab Ltd.
+      <small>Authentic Lenses · Bangladesh</small>
+    </div>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="leadership.html">Leadership</a></li>
+    <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+  </ul>
+  <button class="hamburger" onclick="toggleNav()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-hero-eyebrow">Get In Touch</div>
+    <h1>Let's Talk <em>Business</em></h1>
+    <p>Reach out for bulk orders, custom lab production, pricing inquiries, or anything else. We're ready to help your optical business grow.</p>
+    <div class="breadcrumb">
+      <a href="index.html">Home</a> › <span>Contact</span>
+    </div>
+  </div>
+</div>
+
+<!-- CONTACT MAIN -->
+<section class="contact-main">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- LEFT: Contact Info -->
+      <div class="fade-up">
+        <div class="section-label">Contact Information</div>
+        <h2 class="section-title">Find Us,<br><em>Reach Us</em></h2>
+
+        <div class="contact-detail">
+          <div class="cd-icon">📍</div>
+          <div>
+            <div class="cd-label">Our Address</div>
+            <div class="cd-value">
+              <!-- REPLACE: Your actual address -->
+              [Street / Area Name]<br>
+              [City / Thana], Bangladesh
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="cd-icon">📞</div>
+          <div>
+            <div class="cd-label">Phone Numbers</div>
+            <div class="cd-value">
+              <!-- REPLACE: Your phone numbers -->
+              +880 XXXX-XXXXXX<br>
+              +880 XXXX-XXXXXX
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="cd-icon">✉️</div>
+          <div>
+            <div class="cd-label">Email Address</div>
+            <div class="cd-value">
+              <!-- REPLACE: Your email -->
+              info@greenopticallab.com
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="cd-icon">💬</div>
+          <div>
+            <div class="cd-label">WhatsApp / Social</div>
+            <div class="cd-value">
+              <!-- REPLACE: Your WhatsApp / Facebook -->
+              WhatsApp: +880 XXXX-XXXXXX<br>
+              Facebook: facebook.com/greenopticallab
+            </div>
+          </div>
+        </div>
+
+        <div class="hours-table">
+          <h3>Business Hours</h3>
+          <div class="hours-row"><span class="hours-day">Saturday – Wednesday</span><span class="hours-time">9:00 AM – 6:00 PM</span></div>
+          <div class="hours-row"><span class="hours-day">Thursday</span><span class="hours-time">9:00 AM – 5:00 PM</span></div>
+          <div class="hours-row"><span class="hours-day">Friday</span><span class="hours-time closed">Closed</span></div>
+        </div>
+      </div>
+
+      <!-- RIGHT: Form -->
+      <div class="fade-up" style="transition-delay:.15s">
+        <div class="form-card">
+          <h2>Send Us a Message</h2>
+          <p>We typically respond within 1 business day. For urgent orders, please call directly.</p>
+
+          <!-- Netlify Forms: data-netlify="true" enables automatic form capture -->
+          <form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="handleFormSubmit(event)">
+            <input type="hidden" name="form-name" value="contact">
+            <p style="display:none;"><label>Don't fill this out: <input name="bot-field"/></label></p>
+
+            <div class="form-row">
+              <div class="fg">
+                <label>Full Name <span class="required">*</span></label>
+                <input type="text" name="name" placeholder="Your full name" required>
+              </div>
+              <div class="fg">
+                <label>Phone Number <span class="required">*</span></label>
+                <input type="tel" name="phone" placeholder="+880 ..." required>
+              </div>
+            </div>
+
+            <div class="fg">
+              <label>Email Address</label>
+              <input type="email" name="email" placeholder="your@email.com">
+            </div>
+
+            <div class="fg">
+              <label>Business / Shop Name <span class="required">*</span></label>
+              <input type="text" name="business" placeholder="Your optical shop or business name" required>
+            </div>
+
+            <div class="fg">
+              <label>District / Location</label>
+              <input type="text" name="location" placeholder="e.g., Dhaka, Chittagong, Sylhet...">
+            </div>
+
+            <div class="fg">
+              <label>Inquiry Type <span class="required">*</span></label>
+              <select name="inquiry" required>
+                <option value="" disabled selected>Select inquiry type</option>
+                <option value="bulk-order">Bulk Order Inquiry</option>
+                <option value="custom-lab">Custom Lab Order</option>
+                <option value="pricing">Pricing Information</option>
+                <option value="delivery">Delivery Information</option>
+                <option value="partnership">Business Partnership</option>
+                <option value="general">General Inquiry</option>
+              </select>
+            </div>
+
+            <div class="fg">
+              <label>Your Message <span class="required">*</span></label>
+              <textarea name="message" placeholder="Tell us about your order requirements, quantities, specific lens types, or any questions you have..." required></textarea>
+            </div>
+
+            <button type="submit" id="submitBtn" class="btn-primary" style="width:100%;">
+              Send Inquiry
+            </button>
+          </form>
+
+          <div class="form-success" id="formSuccess">
+            <div class="success-icon">✅</div>
+            <h3>Message Sent!</h3>
+            <p>Thank you for your inquiry. Our team will get back to you within 1 business day.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- MAP SECTION -->
+<section class="map-section">
+  <div class="map-section-inner">
+    <div class="section-label">Our Location</div>
+    <h2 class="section-title">Find Us on the Map</h2>
+    <!--
+      TO EMBED GOOGLE MAPS:
+      1. Go to maps.google.com and search your address
+      2. Click Share → Embed a map → Copy HTML
+      3. Replace the <img> below with the <iframe> from Google
+      4. Add these styles to the iframe:
+         style="width:100%;height:340px;border-radius:14px;border:0;"
+    -->
+    <!-- REPLACE src: screenshot of your location on map — recommended 1200×340px -->
+    <img
+      src="images/map-location.jpg"
+      alt="Green Optical Lab Ltd. location map"
+      class="img-map"
+      width="1200" height="340"
+    >
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="faq-inner">
+    <div style="text-align:center;">
+      <div class="section-label" style="justify-content:center;">FAQ</div>
+      <h2 class="section-title" style="text-align:center;">Common Questions</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFAQ(this)">Do you sell individual lenses or only in bulk?<span class="arrow">▼</span></button>
+        <div class="faq-a">We primarily supply in bulk to optical retailers, opticians, and wholesalers across Bangladesh. Please get in touch to discuss minimum order quantities and pricing for your specific needs.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFAQ(this)">Can you produce custom lenses for specific prescriptions?<span class="arrow">▼</span></button>
+        <div class="faq-a">Yes — our in-house lab can produce custom lenses to any prescription specification, including specific coatings. We handle large-volume custom orders and can work with you to meet your exact requirements.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFAQ(this)">Which delivery services do you use?<span class="arrow">▼</span></button>
+        <div class="faq-a">We work with all major courier services in Bangladesh including SA Paribahan, Sundarban Courier, Pathao Courier, Paperfly, RedX, eCourier, and others — ensuring coverage across all 64 districts.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFAQ(this)">How are lenses packaged for delivery?<span class="arrow">▼</span></button>
+        <div class="faq-a">All lenses are carefully packaged in protective lens-safe packaging to prevent damage during transit. Every order arrives in perfect condition regardless of the delivery distance.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFAQ(this)">Are your imported lenses certified and authentic?<span class="arrow">▼</span></button>
+        <div class="faq-a">Absolutely. We source exclusively from verified and certified manufacturers in China. Every product comes with quality documentation and undergoes our own quality check before entering inventory.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFAQ(this)">How do I place a bulk order?<span class="arrow">▼</span></button>
+        <div class="faq-a">Fill out the contact form on this page, call us directly, or send a WhatsApp message. Describe your requirements — lens type, quantity, and location — and our team will respond with pricing and availability.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-brand-text">Green Optical Lab Ltd.</div>
+        <div class="footer-brand-sub">Authentic Lenses · Bangladesh</div>
+        <p>Importing certified lenses from China, producing custom lenses in our own lab, and delivering across all of Bangladesh.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="leadership.html">Leadership</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#import">Authentic Import</a></li>
+          <li><a href="services.html#lab">In-House Lab</a></li>
+          <li><a href="services.html#storage">Storage System</a></li>
+          <li><a href="services.html#delivery">Nationwide Delivery</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="#">📍 Your Address, BD</a></li>
+          <li><a href="#">📞 +880 XXXX-XXXXXX</a></li>
+          <li><a href="#">✉️ info@greenopticallab.com</a></li>
+          <li><a href="#">🕐 Sat–Thu: 9AM–6PM</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Green Optical Lab Ltd. All rights reserved.</span>
+      <span>Made with 🇧🇩 for Bangladesh's optical industry</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>
