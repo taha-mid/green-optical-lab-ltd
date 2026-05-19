@@ -1,5 +1,4 @@
 // contact.js — Contact page specific scripts
-
 function handleFormSubmit(e) {
   e.preventDefault();
   const form = e.target;
@@ -7,14 +6,18 @@ function handleFormSubmit(e) {
   btn.textContent = 'Sending…';
   btn.disabled = true;
 
-  fetch('/', {
+  fetch(form.action, {
     method: 'POST',
-    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-    body: new URLSearchParams(new FormData(form)).toString()
+    body: new FormData(form),
+    headers: { 'Accept': 'application/json' }
   })
-  .then(() => {
-    form.style.display = 'none';
-    document.getElementById('formSuccess').style.display = 'block';
+  .then(response => {
+    if (response.ok) {
+      form.style.display = 'none';
+      document.getElementById('formSuccess').style.display = 'block';
+    } else {
+      throw new Error('Server error');
+    }
   })
   .catch(() => {
     btn.textContent = 'Send Inquiry';
